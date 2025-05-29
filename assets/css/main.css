@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+@theme {
+  --font-sans: 'InterVariable', sans-serif;
+}
+body {
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+header {
+    height: 70px;
+}
+h1 {
+    font-weight: 800;
+    font-size: 80px;
+    letter-spacing: -6px;
+    line-height: 5rem;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-grow: 1;
+    min-width: 25%;
+}
+.rhs {
+    flex-grow: 2;
+}
+.container {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+    border-radius: 60px;
+    background: linear-gradient(to right bottom, #030C3F , #03607C );
+    margin: 0 20px;
+    padding: 30px;
+}
