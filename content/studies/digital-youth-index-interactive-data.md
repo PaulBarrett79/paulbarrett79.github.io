@@ -1,4 +1,4 @@
-# Digital Youth Index - interactive data
+## Digital Youth Index interactive data
 
 Created: May 29, 2025 5:17 PM
 Tags: UI/UX, User Interviews, Wireframing

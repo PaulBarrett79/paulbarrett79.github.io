@@ -1,14 +1,9 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData('docs', () => queryCollection('docs').all())
-const { data: cases } = await useAsyncData('studies', () => queryCollection('studies').all())
 
 </script>
 
 <template>
-    <ul>
-      <li v-for="post in cases" :key="post.id">
-        <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
-        <ContentRenderer v-if="posts" :value="post" />
-      </li>
-    </ul>
+    <h1>Hi my name is Paul Barrett and I have been doing things with websites since 2006.</h1>
+    <hr>
+    <h3>I’ve been a Drupal dev, front end developer, UX developer, UX designer and loads of other things</h3>
 </template>
