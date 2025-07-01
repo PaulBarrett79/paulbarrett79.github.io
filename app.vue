@@ -4,7 +4,7 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items = ref<NavigationMenuItem[]>([
   {
     label: 'Case studies',
-    to: '/studies/',
+    to: '/studies',
   },
   {
     label: 'Github',
@@ -22,23 +22,38 @@ const items = ref<NavigationMenuItem[]>([
 </script>
 
 <template>
-    <UApp class="flex grow">
-      <UContainer class="w-full flex flex-col justify-stretch">
-        <header>
+    <UApp class="flex grow h-full">
+      <UContainer class="w-full h-full flex flex-col justify-stretch">
+        <header class="flex justify-between items-center">
+          <NuxtLink to="/">
+            <NuxtImg src="/img/pblogodark.png" height="50px" width="auto" ></NuxtImg>
+          </NuxtLink>
+          
           <UNavigationMenu :items="items" class="w-full justify-end align-center" />
         </header>
         <div class="blue-container">
           <nav class="lhs">
             photo here
           </nav>
-        <section class="rhs">
-          <NuxtPage :transition="{
-            name: 'bounce',
-            mode: 'out-in'
-          }"/>
-        </section>
+          <section class="rhs">
+            <NuxtPage />
+          </section>
         </div>
-        
+        <footer class="h-30">
+          hi
+        </footer>
       </UContainer>
     </UApp>
 </template>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>

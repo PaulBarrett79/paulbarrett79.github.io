@@ -13,6 +13,14 @@
 @theme {
   --font-sans: 'InterVariable', sans-serif;
 }
+html, body {
+    min-height: 100%;
+}
+#__nuxt {
+  min-height: 100%;
+  display: flex;
+  flex-grow: 1;
+}
 body {
     color: white;
     font-weight: 400;
@@ -60,4 +68,7 @@ hr {
 p, ul, li {
     line-height: 1.75rem;
     font-size: 1.2rem;
+}
+P {
+    margin-bottom: 1.2rem;
 }

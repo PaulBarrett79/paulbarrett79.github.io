@@ -12,7 +12,6 @@
           <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
         </BlogPostThumb>
         
-        <!-- <ContentRenderer v-if="posts" :value="post" /> -->
       </li>
     </ul>
   </div>
