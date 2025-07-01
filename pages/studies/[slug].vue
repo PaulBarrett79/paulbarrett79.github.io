@@ -8,9 +8,9 @@ const { data: post } = await useAsyncData(`studies-${slug}`, () => {
 <template>
    <div>
       <section class="intro">
-          <a class="button is-white text-sm" @click="$router.back()">
+          <UButton icon="i-lucide-chevron-left" variant="link" class="link is-white white text-sm" @click="$router.back()">
             Back
-          </a>
+          </UButton>
           <h1>{{ post.title }}</h1>
           <em>{{ post.description }}</em>
       </section>

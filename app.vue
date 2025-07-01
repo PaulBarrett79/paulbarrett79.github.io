@@ -4,7 +4,13 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items = ref<NavigationMenuItem[]>([
   {
     label: 'Case studies',
+    icon: 'i-lucide-image', 
     to: '/studies',
+  },
+  {
+    label: 'About me',
+    icon: 'i-lucide-user',
+    to: '/about',
   },
   {
     label: 'Github',
@@ -33,7 +39,7 @@ const items = ref<NavigationMenuItem[]>([
         </header>
         <div class="blue-container">
           <nav class="lhs">
-            photo here
+            <NuxtImg src="/img/pbprofile2025.png" class="profile-pic" ></NuxtImg>
           </nav>
           <section class="rhs">
             <NuxtPage />
@@ -55,5 +61,8 @@ const items = ref<NavigationMenuItem[]>([
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+}
+.profile-pic {
+  border-radius: 200px;
 }
 </style>

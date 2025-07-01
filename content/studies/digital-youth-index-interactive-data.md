@@ -25,7 +25,7 @@ The project team reported that the tasks proved to be quite challenging. One quo
 
 Since all of this was using public benefit company money, the budgets were SUPER tight so not many changes could be made - either lots of easy, small wins or a couple of big ticket items.
 
-![Screenshot to illustrate that the visualisation required scrolling to actually see the data and that too much of the screen was being used inefficiently](/img/Untitled.png)
+![Screenshot to illustrate that the visualisation required scrolling to actually see the data and that too much of the screen was being used inefficiently](/img/interactive-data-before.png)
 
 > Screenshot to illustrate that the visualisation required scrolling to actually see the data and that too much of the screen was being used inefficiently
 
