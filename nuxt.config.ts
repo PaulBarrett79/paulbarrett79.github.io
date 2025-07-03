@@ -24,5 +24,5 @@ export default defineNuxtConfig({
     families: [
       { name: 'Outfit', provider: 'google'}
     ]
-  },
+  }
 })

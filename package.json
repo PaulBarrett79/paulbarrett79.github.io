@@ -6,7 +6,7 @@
     "test": "{src,test}/*.js"
   },
   "scripts": {
-    "build": "nuxt build --dotenv .env",
+    "build": "NUXT_APP_BASE_URL=/portfolio-nuxt/ nuxt build --preset github_pages",
     "dev": "nuxt dev --dotenv .env.local",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
