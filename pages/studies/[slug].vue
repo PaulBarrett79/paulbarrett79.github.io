@@ -1,5 +1,4 @@
 <script setup>
-import { ContentRenderer, UButton } from '#components';
 
 const slug = useRoute().params.slug
 const { data: post } = await useAsyncData(`studies-${slug}`, () => {

@@ -1,7 +1,4 @@
 <script setup>
-import { NuxtImg, NuxtLink } from '#components';
-
-
   const { data: studies } = await useAsyncData('studies', () => queryCollection('studies').all())
 </script>
 

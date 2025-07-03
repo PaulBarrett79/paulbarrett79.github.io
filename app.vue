@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { NuxtImg, NuxtLink, NuxtPage, UApp, UContainer, UNavigationMenu } from '#components';
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 const items = ref<NavigationMenuItem[]>([
