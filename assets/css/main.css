@@ -37,12 +37,17 @@ h1 {
     letter-spacing: -3px;
     line-height: 6.5rem;
 }
+h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 2.75rem;
+}
 h3 {
   font-weight: 600;
 }
 hr {
   line-height: 2rem;
-  margin: 24px;
+  margin: 4px 0 24px;
   color: #5de7f1;
 }
 .lhs {
@@ -71,4 +76,12 @@ p, ul, li {
 }
 P {
     margin-bottom: 1.2rem;
+}
+blockquote {
+  padding: 0 10px;
+}
+blockquote p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
 }

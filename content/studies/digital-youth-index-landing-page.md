@@ -1,9 +1,10 @@
 ---
 title: 'Digital Youth Index landing page'
 description: 'A case sudy around improving conversion rates for people arriving at the front door'
+thumb: '/img/Screenshot_2024-03-20_at_18.22.41.png'
 ---
 
-### The context
+## The context
 
 ---
 
@@ -11,7 +12,7 @@ Nominet’s Social Impact team had a tool which they had designed called [Digita
 
 Following the deployment of an improved version of their data tool, the team wanted to know how they could improve engagement with the rest of the site. This started out with examining the landing page.
 
-### We started with analytics data
+## We started with analytics data
 
 ---
 
@@ -27,7 +28,7 @@ The main points we took from this were that:
 
 Clearly there is only so much you can glean from pure numbers - we needed a little more qualitative information.
 
-### We continued with user panels
+## We continued with user panels
 
 ---
 
@@ -49,7 +50,7 @@ After the sessions I collated the findings - grouped the comments together into 
 
 ![Untitled](/img/Untitled_2.png)
 
-### Next, some wireframes
+## Next, some wireframes
 
 ---
 
@@ -57,7 +58,7 @@ Using this information we were able to collaboratively produce some wireframes w
 
 ![Screenshot 2024-03-20 at 18.29.45.png](/img/Screenshot_2024-03-20_at_18.29.45.png)
 
-### Sent to the developers...
+## Sent to the developers...
 
 ---
 

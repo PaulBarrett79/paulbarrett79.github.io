@@ -13,7 +13,8 @@ export default defineContentConfig({
       type: 'page',
       source: 'studies/*.md',
       schema: z.object({
-        date: z.string()
+        date: z.string(),
+        thumb: z.string(),
       })
     }),
   }

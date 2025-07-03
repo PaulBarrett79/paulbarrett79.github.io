@@ -20,7 +20,7 @@ const { data: post } = await useAsyncData(`studies-${slug}`, () => {
    </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .intro {
   margin-bottom: 40px;
   h1 {
@@ -34,12 +34,7 @@ a {
   display: flex;
   max-width: 900px;
 }
-blockquote {
-  padding: 0 10px;
-}
-blockquote p {
-  font-size: small;
-  font-weight: 400;
-  font-style: italic;
+img.data-nuxt-img {
+  margin: 0 auto;
 }
 </style>

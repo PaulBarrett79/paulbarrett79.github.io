@@ -1,6 +1,7 @@
 ---
 title: 'Digital Youth Index interactive data'
 description: 'A case sudy around interactive data visualisation for researchers finding data on digital poverty in the UK'
+thumb: '/img/Screenshot_2024-03-27_at_16.52.43.png'
 ---
 
 ## The context
@@ -41,7 +42,7 @@ I presented these to the DYI team at Nominet and they seemed happy. They also sh
 
 ![Lo fidelity sketch to quickly convey ideas around how the layout of the graphs could change from the screenshot earlier - more of the graph visible above the fold, vertical bars by default, question selectors laid out horizontally](/img/Screenshot_2024-03-15_at_15.56.39.png)
 
-Lo fidelity sketch to quickly convey ideas around how the layout of the graphs could change from the screenshot earlier - more of the graph visible above the fold, vertical bars by default, question selectors laid out horizontally
+> Lo fidelity sketch to quickly convey ideas around how the layout of the graphs could change from the screenshot earlier - more of the graph visible above the fold, vertical bars by default, question selectors laid out horizontally
 
 ## The outcomes
 
@@ -54,7 +55,7 @@ The main points of change were:
 
 ![The result of the UX work! a much easier to navigate graph, more real estate given to visualisations, questions displayed horizontally, and follows the feedback which was given.](/img/Screenshot_2024-03-27_at_16.52.43.png)
 
-The result of the UX work! a much easier to navigate graph, more real estate given to visualisations, questions displayed horizontally, and follows the feedback which was given.
+> The result of the UX work! a much easier to navigate graph, more real estate given to visualisations, questions displayed horizontally, and follows the feedback which was given.
 
 The main takeaway for the team was that they now had a tool which addressed many if not all of the feedback points they had received. The digital agency came back to them with an improved tool which does a much better job - not perfect but a good start
 

@@ -16,5 +16,13 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
+  },
+  fonts: {
+    defaults: {
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+    },
+    families: [
+      { name: 'Outfit', provider: 'google'}
+    ]
   }
 })

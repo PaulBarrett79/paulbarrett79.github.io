@@ -1,6 +1,7 @@
 ---
 title: 'Timeline and History - a Domain Management case study'
 description: 'A case sudy around the difficulties of improving complex data management apps for a risk-averse audience'
+thumb: '/img/Object_History_-_Andrew_1.jpg'
 ---
 
 ## The initial problem
@@ -11,9 +12,9 @@ While coming up with designs for our web domain manager software, one bit of fun
 
 ![The view from the existing tool - Dragon - which shows the datepicker-based navigation](/img/Pasted_Image_29_08_2023__15_28.png)
 
-The view from the existing tool - Dragon - which shows the datepicker-based navigation
+> The view from the existing tool - Dragon - which shows the datepicker-based navigation
 
-This was a successor to another domain management tool - *Enchilada* - which is being sunsetted. The functionality around history had not been workshopped adequately and this new tool was not being used. We had to find out why so we did not repeat the same mistakes
+This was a successor to another domain management tool - *Enchilada* - which was being sunsetted. The functionality around history had not been workshopped adequately and this new tool was not being used. We had to find out why so we did not repeat the same mistakes
 
 ## The process
 
