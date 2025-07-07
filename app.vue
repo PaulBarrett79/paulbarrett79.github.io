@@ -4,13 +4,18 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items = ref<NavigationMenuItem[]>([
   {
     label: 'Case studies',
-    icon: 'i-lucide-image', 
+    icon: 'i-lucide-notebook', 
     to: '/studies',
   },
   {
     label: 'About me',
     icon: 'i-lucide-user',
     to: '/about',
+  },
+  {
+    label: 'Download CV',
+    icon: 'i-lucide-cloud-download',
+    to: '/paulbarrettcouk_cv.pdf',
   },
   {
     label: 'Github',
@@ -32,14 +37,14 @@ const items = ref<NavigationMenuItem[]>([
       <UContainer class="w-full h-full flex flex-col justify-stretch">
         <header class="flex justify-between items-center">
           <NuxtLink to="/">
-            <NuxtImg src="/img/pblogodark.png" height="50px" width="auto" ></NuxtImg>
+            <NuxtImg src="/img/pblogodark.png" height="50px" width="auto" alt="PB logo" ></NuxtImg>
           </NuxtLink>
           
           <UNavigationMenu :items="items" class="w-full justify-end align-center" />
         </header>
-        <div class="blue-container">
-          <nav class="lhs">
-            <NuxtImg src="/img/pbprofile2025.png" class="profile-pic" ></NuxtImg>
+        <div class="blue-container gap-4 md:columns-3">
+          <nav class="lhs max-w-10">
+            <NuxtImg src="/img/tall_profile.jpg" class="profile-pic" alt="Picture of Paul wearing sunglasses" ></NuxtImg>
           </nav>
           <section class="rhs">
             <NuxtPage />
@@ -63,6 +68,6 @@ const items = ref<NavigationMenuItem[]>([
   filter: blur(1rem);
 }
 .profile-pic {
-  border-radius: 200px;
+  border-radius: 40px;
 }
 </style>
