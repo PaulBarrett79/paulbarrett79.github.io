@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-col ">
-        <div class="post-thumb-img">
+    <div class="post-container flex flex-col">
+        <div class="post-thumb-img align-stretch">
             <slot name="thumb" />
         </div>
-        <div class="post-thumb-text">
+        <div class="post-thumb-text aligns-stretch">
             <h2><slot name="title"/></h2>
             <h3><slot name="subtitle" /></h3>
         </div>
@@ -11,13 +11,32 @@
 </template>
 
 <style lang="scss">
-.post-thumb-text {
-    background: #030C3F;
-    padding: 20px;
-    transform: translateY(-90px);
-    transition: all 0.2s ease-out;
+.post-container {
+    .post-thumb-text {
+        background: #030C3F;
+        padding: 20px;
+        transform: translateY(-90px);
+        transition: all 0.2s ease-out;
+        h2, h3 {
+            color: lightgray
+        }
+    }
+    .post-thumb-img {
+        opacity: 0.6;
+        transition: all 0.2s ease-out;
+    }
     &:hover {
-        background: #03607C;
+        .post-thumb-text {
+            background: #03607C;
+            h2, h3 {
+                color: unset;
+            }
+        }
+        .post-thumb-img {
+            opacity: 1;
+        }
     }
 }
+
+
 </style>
