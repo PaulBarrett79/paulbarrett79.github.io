@@ -50,8 +50,8 @@ const items = ref<NavigationMenuItem[]>([
             <NuxtPage />
           </section>
         </div>
-        <footer class="h-30">
-          hi
+        <footer class="p-10 text-center">
+          <small class="text-gray-400">Paul Barrett 2025. Site built with Nuxt and hosted on Github Pages.</small>
         </footer>
       </UContainer>
     </UApp>
