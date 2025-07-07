@@ -15,7 +15,8 @@ const items = ref<NavigationMenuItem[]>([
   {
     label: 'Download CV',
     icon: 'i-lucide-cloud-download',
-    to: '/paulbarrettcouk_cv.pdf',
+    href: '/paulbarrettcouk_cv.pdf',
+    target: '_blank',
   },
   {
     label: 'Github',
