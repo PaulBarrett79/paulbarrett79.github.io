@@ -29,18 +29,49 @@ body {
 header {
     height: 70px;
     display: flex;
-    justify-content: end;
 }
 h1 {
     font-weight: 900;
     font-size: 90px;
     letter-spacing: -3px;
     line-height: 6.5rem;
+    
+    @media (max-width: 1023px) { /* lg */
+      font-size: 48px;
+      letter-spacing: 0px;
+      line-height: 3.5rem;
+    }
+    @media (max-width: 767px) { /* md */
+      font-size: 36px;
+      letter-spacing: 0px;
+      line-height: 2.5rem;
+    }
+    @media (max-width: 639px) { /* sm */
+      font-size: 28px;
+      letter-spacing: 0px;
+      line-height: 2rem;
+    }
 }
 h2 {
   font-weight: 700;
   font-size: 42px;
   line-height: 2.75rem;
+  
+    @media (max-width: 1023px) { /* lg */
+      font-size: 30px;
+      letter-spacing: 0px;
+      line-height: 2.5rem;
+    }
+    @media (max-width: 767px) { /* md */
+      font-size: 24px;
+      letter-spacing: 0px;
+      line-height: 1.75rem;
+    }
+    @media (max-width: 639px) { /* sm */
+      font-size: 18px;
+      letter-spacing: 0px;
+      line-height: 1.5rem;
+    }
 }
 h3 {
   font-weight: 600;
@@ -54,28 +85,36 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    flex-grow: 1;
-    min-width: 25%;
+    min-width: 15vw;
 }
 .rhs {
     flex-grow: 2;
 }
 .blue-container {
-    display: flex;
     justify-content: stretch;
     align-items: stretch;
-    flex-direction: row;
-    border-radius: 60px;
     background: linear-gradient(to right bottom, #030C3F , #03607C );
     padding: 30px;
     height: 100%;
 }
 p, ul, li {
     line-height: 1.75rem;
-    font-size: 1.2rem;
 }
 P {
     margin-bottom: 1.2rem;
+
+    @media (max-width: 1023px) { /* lg */
+      font-size: 20px;
+      line-height: 1.2rem;
+    }
+    @media (max-width: 767px) { /* md */
+      font-size: 18px;
+      line-height: 1.2rem;
+    }
+    @media (max-width: 639px) { /* sm */
+      font-size: 14px;
+      line-height: 1.2rem;
+    }
 }
 blockquote {
   padding: 0 10px;

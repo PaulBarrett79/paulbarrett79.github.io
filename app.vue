@@ -1,53 +1,86 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
+const open = ref(false)
 
 const items = ref<NavigationMenuItem[]>([
   {
     label: 'Case studies',
     icon: 'i-lucide-notebook', 
     to: '/studies',
+    onSelect(e) {
+      open.value = false
+    },
   },
   {
     label: 'About me',
     icon: 'i-lucide-user',
     to: '/about',
+    onSelect(e) {
+      open.value = false
+    },
   },
   {
     label: 'Download CV',
     icon: 'i-lucide-cloud-download',
     to: '/paulbarrettcouk_cv.pdf',
     target: '_blank',
+    onSelect(e) {
+      open.value = false
+    },
   },
   {
     label: 'Github',
     icon: 'i-simple-icons-github', 
     to: 'https://github.com/paulbarrett79',
     target: '_blank',
+    onSelect(e) {
+      open.value = false
+    },
   },
   {
     label: 'LinkedIn',
     icon: 'i-simple-icons-linkedin',
     to: 'https://www.linkedin.com/in/paul-barrett-89040426/',
     target: '_blank',
+    onSelect(e) {
+      open.value = false
+    },
   }
 ])
 </script>
 
 <template>
     <UApp class="flex grow h-full">
-      <UContainer class="w-full h-full flex flex-col justify-stretch">
+      <UContainer class="md:w-full h-full flex flex-col justify-stretch">
         <header class="flex justify-between items-center">
           <NuxtLink to="/">
             <NuxtImg src="/img/pblogodark.png" height="50px" width="auto" alt="PB logo" ></NuxtImg>
           </NuxtLink>
           
-          <UNavigationMenu :items="items" class="w-full justify-end align-center" />
+          <UNavigationMenu :items="items" class="hidden md:flex w-full justify-end align-center" />
+          <USlideover 
+            direction="right" 
+            class="md:hidden" 
+            title="Menu"
+            v-model:open="open"
+            :close="{
+              color: 'neutral',
+              variant: 'outline',
+              class: 'rounded-full'
+            }">
+            <UButton size="xl" icon="i-lucide-menu" variant="outline" color="neutral"></UButton>
+            <template #body>
+              <UNavigationMenu :items="items" orientation="vertical" class="justify-start align-start" />
+            </template>
+          </USlideover>
         </header>
-        <div class="blue-container gap-4 md:columns-3">
-          <nav class="lhs max-w-10">
-            <NuxtImg src="/img/tall_profile.jpg" class="profile-pic" alt="Picture of Paul wearing sunglasses" ></NuxtImg>
+        <div class="blue-container flex rounded-[20px] md:rounded-[60px] gap-0 md:gap-1">
+          <nav class="lhs shrink md:max-w-10 flex justify-center">
+            
+              <NuxtImg src="/img/tall_profile.jpg" class="max-h-[100px] max-w-fit md:max-h-none rounded-[5px] md:rounded-[40px]" alt="Picture of Paul wearing sunglasses" ></NuxtImg>
+            
           </nav>
-          <section class="rhs">
+          <section class="rhs flex flex-col grow">
             <NuxtPage />
           </section>
         </div>
@@ -67,8 +100,5 @@ const items = ref<NavigationMenuItem[]>([
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
-}
-.profile-pic {
-  border-radius: 40px;
 }
 </style>

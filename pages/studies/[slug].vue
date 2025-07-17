@@ -7,7 +7,7 @@ const { data: post } = await useAsyncData(`studies-${slug}`, () => {
 </script>
 
 <template>
-   <div>
+   <div class="px-4">
       <section class="intro">
           <UButton icon="i-lucide-chevron-left" variant="link" class="link is-white white text-sm" @click="$router.back()">
             Back

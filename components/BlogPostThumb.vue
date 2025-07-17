@@ -5,7 +5,7 @@
         </div>
         <div class="post-thumb-text aligns-stretch">
             <h2><slot name="title"/></h2>
-            <h3><slot name="subtitle" /></h3>
+            <h3 class="hidden md:flex"><slot name="subtitle" /></h3>
         </div>
     </div>
 </template>
@@ -15,7 +15,7 @@
     .post-thumb-text {
         background: #030C3F;
         padding: 20px;
-        transform: translateY(-90px);
+        transform: translateY(-50px);
         transition: all 0.2s ease-out;
         h2, h3 {
             color: lightgray
