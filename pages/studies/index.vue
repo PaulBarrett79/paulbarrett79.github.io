@@ -10,7 +10,7 @@
         <NuxtLink :to="post.path">
           <BlogPostThumb>
             <template #thumb>
-              <NuxtImg :src="post.thumb" fit="cover" width="800" height="450"></NuxtImg>
+              <NuxtImg :src="post.thumb" fit="cover" width="800" height="450"/>
             </template>
             <template #title>
             {{ post.title }}
