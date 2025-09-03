@@ -47,6 +47,13 @@ const items = ref<NavigationMenuItem[]>([
     },
   },
 ]);
+const textureUrls = ["align", "edits", "toggles"];
+
+const randomTexture = () => {
+  return `url("img/texture-${
+    textureUrls[Math.floor(Math.random() * textureUrls.length)]
+  }.png")`;
+};
 </script>
 
 <template>
@@ -83,13 +90,10 @@ const items = ref<NavigationMenuItem[]>([
         </USlideover>
       </header>
       <div class="blue-container flex rounded-[20px] md:rounded-[60px] gap-0 md:gap-1">
-        <nav class="lhs shrink md:max-w-10 flex justify-center">
-          <NuxtImg
-            src="/img/tall_profile.jpg"
-            class="max-h-[100px] max-w-fit md:max-h-none rounded-[5px] md:rounded-[40px]"
-            alt="Picture of Paul wearing sunglasses"
-          />
-        </nav>
+        <nav
+          class="lhs shrink md:max-w-10 flex justify-center texture"
+          :style="{ 'background-image': randomTexture() }"
+        />
         <section class="rhs flex flex-col grow">
           <NuxtPage />
         </section>
@@ -112,5 +116,11 @@ const items = ref<NavigationMenuItem[]>([
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+}
+.texture {
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-clip: border-box;
+  mix-blend-mode: soft-light;
 }
 </style>
