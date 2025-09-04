@@ -47,7 +47,7 @@ const items = ref<NavigationMenuItem[]>([
     },
   },
 ]);
-const textureUrls = ["align", "edits", "toggles"];
+const textureUrls = ["align", "edits", "toggles", "order", "tools"];
 
 const randomTexture = () => {
   return `url("img/texture-${
@@ -107,10 +107,16 @@ const randomTexture = () => {
   </UApp>
 </template>
 
-<style>
+<style lang="scss">
+.texture {
+  opacity: 1;
+}
 .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;
+  .texture {
+    opacity: 0;
+  }
 }
 .page-enter-from,
 .page-leave-to {
