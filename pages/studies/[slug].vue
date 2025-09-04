@@ -1,24 +1,30 @@
 <script setup>
-
-const slug = useRoute().params.slug
+const slug = useRoute().params.slug;
 const { data: post } = await useAsyncData(`studies-${slug}`, () => {
-  return queryCollection('studies').path(`/studies/${slug}`).first()
-})
+  return queryCollection("studies").path(`/studies/${slug}`).first();
+});
 </script>
 
 <template>
-   <div class="px-4">
-      <section class="intro">
-          <UButton icon="i-lucide-chevron-left" variant="link" class="link is-white white text-sm" @click="$router.back()">
+  <div class="px-4">
+    <section class="intro">
+      <!-- <UButton icon="i-lucide-chevron-left" variant="link" class="link is-white white text-sm" >
             Back
-          </UButton>
-          <h1>{{ post.title }}</h1>
-          <em>{{ post.description }}</em>
-      </section>
-      <section class="main">
-        <ContentRenderer :value="post" />
-      </section>
-   </div>
+          </UButton> -->
+      <NuxtLink
+        color="secondary"
+        class="mr-4 px-2 flex-inline items-center text-sm"
+        to="/studies"
+      >
+        <UIcon name="i-lucide-chevron-left" /><span>Back</span>
+      </NuxtLink>
+      <h1>{{ post.title }}</h1>
+      <em>{{ post.description }}</em>
+    </section>
+    <section class="main">
+      <ContentRenderer :value="post" />
+    </section>
+  </div>
 </template>
 
 <style scoped lang="scss">

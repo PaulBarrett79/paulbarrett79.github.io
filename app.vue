@@ -47,10 +47,10 @@ const items = ref<NavigationMenuItem[]>([
     },
   },
 ]);
-const textureUrls = ["align", "edits", "toggles", "order", "tools"];
+const textureUrls = ["align", "toggles", "order", "tools"];
 
 const randomTexture = () => {
-  return `url("img/texture-${
+  return `url("/img/texture-${
     textureUrls[Math.floor(Math.random() * textureUrls.length)]
   }.png")`;
 };
@@ -67,6 +67,7 @@ const randomTexture = () => {
         <UNavigationMenu
           :items="items"
           class="hidden md:flex w-full justify-end align-center"
+          color="secondary"
         />
         <USlideover
           v-model:open="open"

@@ -1,9 +1,21 @@
 <template>
   <div class="pl-5 pr-5">
-    <h1 class="pb-5">
-      👋 Hi, I’m Paul - a UX Designer and Front End Developer from Liverpool and now based
-      in Oxford.
-    </h1>
+    <div class="flex">
+      <div>
+        <h1 class="pb-5 flex-shrink">
+          👋 Hi, I’m Paul - a UX Designer and Front End Developer from Liverpool and now
+          based in Oxford.
+        </h1>
+      </div>
+      <div class="flex-grow mix-blend-luminosity">
+        <NuxtImg
+          src="/img/about-image.jpg"
+          alt="PB profile pic"
+          class="flex-grow rounded-[20px] mt-5"
+        />
+      </div>
+    </div>
+
     <h2 class="pb-5">My journey to this point has been full of twists and turns...</h2>
     <p class="pb-4">
       My background is originally in Biochemistry and Biological Science. I did a Masters

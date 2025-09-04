@@ -27,5 +27,10 @@ export default defineNuxtConfig({
     families: [
       { name: 'Outfit', provider: 'google'}
     ]
-  }
+  },
+  content: {
+    renderer: {
+      anchorLinks: { h2: false, h3: false, h4: false }
+    },
+  },
 })

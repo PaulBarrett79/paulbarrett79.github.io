@@ -9,8 +9,10 @@
       I’ve been a full stack dev, front end developer, UX developer, UX designer and loads
       of other things
     </h2>
-    <section id="experience" class="flex justify-between p-4">
-      <UCard class="m-2 text-center content-between text-xl">
+    <section id="experience" class="flex justify-between p-4 my-5">
+      <UCard
+        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+      >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-notebook" class="text-black custom-iconify" />
           <UIcon name="i-lucide-pencil" class="text-black custom-iconify" />
@@ -21,7 +23,9 @@
           >
         </div>
       </UCard>
-      <UCard class="m-2 text-center content-between text-xl">
+      <UCard
+        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+      >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-figma" class="text-black custom-iconify" />
           <UIcon name="i-lucide-workflow" class="text-black custom-iconify" />
@@ -32,7 +36,9 @@
           >
         </div>
       </UCard>
-      <UCard class="m-2 text-center content-between text-xl">
+      <UCard
+        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+      >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-terminal" class="text-black custom-iconify" />
           <UIcon name="i-lucide-braces" class="text-black custom-iconify" />
@@ -43,7 +49,9 @@
           >
         </div>
       </UCard>
-      <UCard class="m-2 text-center content-between text-xl">
+      <UCard
+        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+      >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-code-xml" class="text-black custom-iconify" />
           <UIcon name="i-lucide-paint-roller" class="text-black custom-iconify" />
