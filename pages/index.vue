@@ -11,7 +11,7 @@
     </h2>
     <section id="experience" class="flex justify-between p-4 my-5">
       <UCard
-        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+        class="cardycard m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
       >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-notebook" class="text-black custom-iconify" />
@@ -24,7 +24,7 @@
         </div>
       </UCard>
       <UCard
-        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+        class="cardycard m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
       >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-figma" class="text-black custom-iconify" />
@@ -37,7 +37,7 @@
         </div>
       </UCard>
       <UCard
-        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+        class="cardycard m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
       >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-terminal" class="text-black custom-iconify" />
@@ -50,7 +50,7 @@
         </div>
       </UCard>
       <UCard
-        class="m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
+        class="cardycard m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
       >
         <div class="flex grow justify-center mb-4">
           <UIcon name="i-lucide-code-xml" class="text-black custom-iconify" />
@@ -85,5 +85,31 @@
 .custom-iconify {
   width: 40px;
   height: 40px;
+}
+.page-enter-active,
+.page-leave-active {
+  .cardycard {
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+    &:nth-child(1) {
+      transition-delay: 0.4s;
+    }
+    &:nth-child(2) {
+      transition-delay: 0.8s;
+    }
+    &:nth-child(3) {
+      transition-delay: 1.2s;
+    }
+    &:nth-child(4) {
+      transition-delay: 1.6s;
+    }
+  }
+}
+.page-enter-from,
+.page-leave-to {
+  .cardycard {
+    opacity: 0;
+  }
+  filter: blur(1rem);
 }
 </style>
