@@ -9,7 +9,11 @@ const { data: studies } = await useAsyncData("studies", () =>
     <h1 class="pl-10">Here are my case studies.</h1>
     <div class="pl-10 sm:w-[400px] md:w-[800px]">
       <ul class="pt-10">
-        <li v-for="post in studies" :key="post.id" class="cardycard">
+        <li
+          v-for="(post, index) in studies"
+          :key="post.id"
+          :class="`cardycard transition delay-${index * 400} duration-600 ease-in-out`"
+        >
           <NuxtLink :to="post.path" class="ingore-link-animations">
             <BlogPostThumb>
               <template #thumb>
@@ -34,19 +38,6 @@ const { data: studies } = await useAsyncData("studies", () =>
 .page-leave-active {
   .cardycard {
     opacity: 1;
-    transition: all 0.6s ease-in-out;
-    &:nth-child(1) {
-      transition-delay: 0.4s;
-    }
-    &:nth-child(2) {
-      transition-delay: 0.8s;
-    }
-    &:nth-child(3) {
-      transition-delay: 1.2s;
-    }
-    &:nth-child(4) {
-      transition-delay: 1.6s;
-    }
   }
 }
 .page-enter-from,
