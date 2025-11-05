@@ -35,7 +35,7 @@ const cardItems = ref([
       <template v-for="(cardItem, index) in cardItems" :key="index">
         <UCard
           :class="`cardycard transition delay-${
-            index * 400
+            (index + 1) * 400
           } duration-600 ease-in-out m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300`"
         >
           <div class="flex grow justify-center mb-4">

@@ -12,7 +12,9 @@ const { data: studies } = await useAsyncData("studies", () =>
         <li
           v-for="(post, index) in studies"
           :key="post.id"
-          :class="`cardycard transition delay-${index * 400} duration-600 ease-in-out`"
+          :class="`cardycard transition delay-${
+            (index + 1) * 400
+          } duration-600 ease-in-out`"
         >
           <NuxtLink :to="post.path" class="ingore-link-animations">
             <BlogPostThumb>
