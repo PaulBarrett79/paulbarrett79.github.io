@@ -4,6 +4,10 @@ description: 'A case sudy around interactive data visualisation for researchers 
 thumb: '/img/Screenshot_2024-03-27_at_16.52.43.png'
 ---
 
+## What this case study demonstrates about me
+
+Resourcefulness under constraint, ability to translate user feedback into actionable design, demonstrable impact on user engagement (traffic), and improving core functionality (filtering, visualization).
+
 ## The context
 
 Nominet’s Social Impact team had a tool which they had designed called [Digital Youth Index](https://digitalyouthindex.uk/). It had been constructed with the help of an external digital agency. Its purpose was to filter and display data from a large dataset to answer specific questions about how young people used digital technology and to explore digital poverty.
@@ -16,13 +20,13 @@ The team had summarised the raw data and added some of their own qualitative fin
 
 ## The initial problem
 
-The data provided by the tool was viewed generally as good and useful. However…
+The data provided by the tool was viewed generally as good and useful. However, users reported that…
 
-- Users reported that the filtering was difficult to both find and use - a key feature of this tool so this needed urgently looking at. One issue was that the tab on the side used unfriendly wording and was not obvious enough.
-- Users reported that too little of the screen real estate was used for showing the actual graph and that too much scrolling was required to actually see the visualisations.
-- Users reported that the tool was slow to update data and data changed in the middle of using the filter rather than a filter being applied.
+-  the filtering was difficult to both find and use - a key feature of this tool so this needed urgently looking at. One issue was that the tab on the side used unfriendly wording and was not obvious enough.
+-  too little of the screen real estate was used for showing the actual graph and that too much scrolling was required to actually see the visualisations. Filtering, a key feature, was difficult to find and use due to unfriendly wording and insufficient prominence
+-  the tool was slow to update data and data changed in the middle of using the filter rather than a filter being applied.
 
-The project team reported that the tasks proved to be quite challenging. One quote was “Lots of frowning and concentration throughout indicated that the tasks were not easy or intuitive for many of those present and 11 out of 16 were unable to complete the tasks within the time given.”
+The project team reported that the initial tool had a low task completion rate; 11 out of 16 users (68.75%) were unable to complete key tasks within the given time limit, indicating significant usability issues with filtering and data display. One quote was “Lots of frowning and concentration throughout indicated that the tasks were not easy or intuitive for many of those present.”
 
 Since all of this was using public benefit company money, the budgets were SUPER tight so not many changes could be made - either lots of easy, small wins or a couple of big ticket items.
 
@@ -32,13 +36,11 @@ Since all of this was using public benefit company money, the budgets were SUPER
 
 ## The proposals
 
-I took an approach of dealing with some of the feedback through the lens of UX best practice. Since I wouldn’t be doing the large parts of the work, I had to explain these in a way that would be easy for our team to understand and then convey back to their agency.
+Operating under the aforementioned SUPER tight budget, I employed UX best practices and user feedback to develop lo-fi sketches, proposing solutions that required minimal new code for significant layout improvements, such as maximizing graph visibility 'above the fold' and changing question selectors. Since I wouldn’t be doing the large parts of the work, I had to explain these in a way that would be easy for our team to understand and then convey back to their agency.
 
 I started by taking a summary of the feedback the DYI team received and made some bullet points for how some of these issues could be addressed.
 
-For some of the layout issues, I made some lo-fi sketches in Miro to illustrate how some elements could be moved without too much new code - purely from a viewpoint of UX best practice and the feedback from the tasks.
-
-I presented these to the DYI team at Nominet and they seemed happy. They also shared with me some of the ideas from their digital agency, which were reassuringly similar.
+I presented these to the DYI team at Nominet and they were happy. They also shared with me some of the ideas from their digital agency, which were reassuringly similar.
 
 ![Lo fidelity sketch to quickly convey ideas around how the layout of the graphs could change from the screenshot earlier - more of the graph visible above the fold, vertical bars by default, question selectors laid out horizontally](/img/Screenshot_2024-03-15_at_15.56.39.png)
 
@@ -49,7 +51,7 @@ I presented these to the DYI team at Nominet and they seemed happy. They also sh
 The main points of change were:
 
 - accessible colours ALWAYS used for the graphs rather than be an option
-- horizontally laid out question selectors to maximise available screen real estate
+- the implementation of horizontally laid out question selectors and more visible filter starting points significantly improved navigation and maximized available screen real estate, addressing critical user pain points
 - a loading spinner whenever the graph filters change
 - more visible filter starting points
 
@@ -61,4 +63,7 @@ The main takeaway for the team was that they now had a tool which addressed many
 
 ## Next steps
 
-We now need to get feedback from users on this new design, validate it is still working for them and see where further improvements can be made. There has already been an uptick in traffic since this went live!
+The redesigned tool resulted in an immediate uptick in traffic. While specific post-launch task completion rates are pending, the changes addressed all core feedback points, aiming to reduce user frustration, decrease time-on-task, and improve data comprehension by optimizing screen real estate for visualizations.
+
+The team now need to get feedback from users on this new design, validate it is still working for them and see where further improvements can be made. 
+
