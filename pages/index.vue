@@ -25,8 +25,8 @@ const cardItems = ref([
       Hi my name is Paul Barrett and this is my portfolio site. Welcome!
     </h1>
     <h2 class="px-4 mt-2 md:mt-20">
-      I’ve been a full stack dev, front end developer, UX developer, UX designer and loads
-      of other things
+      I am an experienced Front End Web Developer and UX Designer. <br />Some people call
+      this a UX Developer.
     </h2>
     <section
       id="experience"
