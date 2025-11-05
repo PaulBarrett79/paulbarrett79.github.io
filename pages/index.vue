@@ -1,4 +1,23 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const cardItems = ref([
+  {
+    text: "Wireframing and ideation in Miro and Figjam (and paper!)",
+    icons: ["i-lucide-notebook", "i-lucide-pencil"],
+  },
+  {
+    text: "Prototyping and design system construction in Figma",
+    icons: ["i-lucide-figma", "i-lucide-workflow"],
+  },
+  {
+    text: "Front end development in Vue/Nuxt as well as React",
+    icons: ["i-lucide-terminal", "i-lucide-braces"],
+  },
+  {
+    text: "Good old classic HTML and loads of CSS experience",
+    icons: ["i-lucide-code-xml", "i-lucide-paint-roller"],
+  },
+]);
+</script>
 
 <template>
   <div class="flex flex-col">
@@ -13,58 +32,22 @@
       id="experience"
       class="flex justify-between flex-wrap md:flex-nowrap p-4 my-5"
     >
-      <UCard
-        class="cardycard transition delay-400 duration-600 ease-in-out m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
-      >
-        <div class="flex grow justify-center mb-4">
-          <UIcon name="i-lucide-notebook" class="text-black custom-iconify" />
-          <UIcon name="i-lucide-pencil" class="text-black custom-iconify" />
-        </div>
-        <div class="flex shrink">
-          <span class="text-gray-700 text-sm"
-            >Wireframing and ideation in Miro and Figjam (and paper!)</span
-          >
-        </div>
-      </UCard>
-      <UCard
-        class="cardycard transition delay-800 duration-600 ease-in-out m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
-      >
-        <div class="flex grow justify-center mb-4">
-          <UIcon name="i-lucide-figma" class="text-black custom-iconify" />
-          <UIcon name="i-lucide-workflow" class="text-black custom-iconify" />
-        </div>
-        <div class="flex shrink">
-          <span class="text-gray-700 text-sm"
-            >Prototyping and design system construction in Figma</span
-          >
-        </div>
-      </UCard>
-      <UCard
-        class="cardycard transition delay-1200 duration-600 ease-in-out m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
-      >
-        <div class="flex grow justify-center mb-4">
-          <UIcon name="i-lucide-terminal" class="text-black custom-iconify" />
-          <UIcon name="i-lucide-braces" class="text-black custom-iconify" />
-        </div>
-        <div class="flex shrink">
-          <span class="text-gray-700 text-sm"
-            >Front end development in Vue/Nuxt as well as React</span
-          >
-        </div>
-      </UCard>
-      <UCard
-        class="cardycard transition delay-1600 duration-600 ease-in-out m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300"
-      >
-        <div class="flex grow justify-center mb-4">
-          <UIcon name="i-lucide-code-xml" class="text-black custom-iconify" />
-          <UIcon name="i-lucide-paint-roller" class="text-black custom-iconify" />
-        </div>
-        <div class="flex shrink">
-          <span class="text-gray-700 text-sm"
-            >Good old classic HTML and loads of CSS experience</span
-          >
-        </div>
-      </UCard>
+      <template v-for="(cardItem, index) in cardItems" :key="index">
+        <UCard
+          :class="`cardycard transition delay-${
+            index * 400
+          } duration-600 ease-in-out m-2 text-center content-between text-xl bg-linear-to-b from-white to-gray-300`"
+        >
+          <div class="flex grow justify-center mb-4">
+            <template v-for="(cardIcon, inddex) in cardItem.icons" :key="inddex">
+              <UIcon :name="cardIcon" class="text-black custom-iconify" />
+            </template>
+          </div>
+          <div class="flex shrink">
+            <span class="text-gray-700 text-sm">{{ cardItem.text }}</span>
+          </div>
+        </UCard>
+      </template>
     </section>
     <p class="px-4 mt-2">
       I have worn quite a few hats - UX design, interaction design, wireframing and
